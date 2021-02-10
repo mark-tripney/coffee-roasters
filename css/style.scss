@@ -1,0 +1,148 @@
+//************************************************
+// VARIABLES
+//************************************************
+
+// COLOURS
+$cream: #FEFCF7;
+$cyan: #0E8784;
+$greyblue: #333D4B;
+// FONTS
+$fraunces: 'Fraunces', serif;
+$barlow: 'Barlow', sans-serif;
+
+//************************************************
+// GLOBAL
+//************************************************
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $cream;
+}
+
+.wrapper {
+  width: 87%;
+  margin: 0 auto;
+}
+
+//************************************************
+// TYPE
+//************************************************
+
+p {
+  font-family: $barlow;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+h2, h4 {
+  font-family: $fraunces;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+//************************************************
+// BUTTONS
+//************************************************
+
+.main-btn {
+  border: none;
+  width: 217px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: $cyan;
+  color: $cream;
+  font-family: $fraunces;
+  font-size: 18px;
+  margin-top: 39px;
+  margin-bottom: 99px;
+  &:hover {
+    background-color: #66D2CF;
+  }
+}
+
+//************************************************
+// HEADER
+//************************************************
+
+header {
+  text-align: center;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+
+.img-logo {
+  width: 163px;
+  height: 18px;
+}
+
+.hero {
+  background: url("../assets/home/mobile/image-hero-coffeepress.jpg") no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.hero-text {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.hero p, h2 {
+  color: $cream;
+}
+
+.hero-heading {
+  padding-top: 100px;
+  padding-bottom: 24px;
+  line-height: 1.1;
+}
+
+.hero p {
+  line-height: 25px;
+  opacity: 0.8;
+}
+
+//************************************************
+// COLLECTION
+//************************************************
+
+.collection,
+.collection > .collection-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.collection-option p {
+  color: $greyblue;
+  width: 86%;
+}
+
+.collection-option img {
+  width: 200px;
+  margin: 36px 0 24px;
+}
+
+.collection-option h4 {
+  margin-bottom: 24px;
+}
