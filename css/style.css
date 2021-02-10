@@ -35,16 +35,18 @@ h4 {
 }
 
 .main-btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   width: 217px;
   height: 56px;
-  border-radius: 5px;
+  border-radius: 6px;
   background-color: #0E8784;
   color: #FEFCF7;
   font-family: "Fraunces", serif;
   font-size: 18px;
-  margin-top: 39px;
-  margin-bottom: 99px;
+  padding-bottom: 3px;
 }
 .main-btn:hover {
   background-color: #66D2CF;
@@ -71,6 +73,7 @@ header {
   background: url("../assets/home/mobile/image-hero-coffeepress.jpg") no-repeat;
   background-size: cover;
   border-radius: 10px;
+  margin-bottom: 142px;
 }
 
 .hero-text {
@@ -83,7 +86,7 @@ header {
 }
 
 .hero-heading {
-  padding-top: 100px;
+  padding-top: 106px;
   padding-bottom: 24px;
   line-height: 1.1;
 }
@@ -91,6 +94,15 @@ header {
 .hero p {
   line-height: 25px;
   opacity: 0.8;
+}
+
+.header-btn {
+  margin-top: 39px;
+  margin-bottom: 99px;
+}
+
+.collection {
+  margin-bottom: 120px;
 }
 
 .collection,
@@ -101,16 +113,27 @@ header {
   text-align: center;
 }
 
+.collection h2 {
+  background: -webkit-linear-gradient(#83888F, #FEFCF7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .collection-option p {
   color: #333D4B;
   width: 86%;
+  margin-bottom: 60px;
 }
 
 .collection-option img {
   width: 200px;
-  margin: 36px 0 24px;
+  margin-bottom: 24px;
+}
+
+.espresso {
+  margin-top: 35px;
 }
 
 .collection-option h4 {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
