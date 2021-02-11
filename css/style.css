@@ -18,12 +18,17 @@ body {
 p {
   font-family: "Barlow", sans-serif;
   font-size: 15px;
+  line-height: 25px;
   font-weight: 400;
 }
 
-h2, h4 {
+h1, h2, h4 {
   font-family: "Fraunces", serif;
   font-weight: 900;
+}
+
+h1 {
+  font-size: 72px;
 }
 
 h2 {
@@ -92,7 +97,6 @@ header {
 }
 
 .hero p {
-  line-height: 25px;
   opacity: 0.8;
 }
 
@@ -136,4 +140,92 @@ header {
 
 .collection-option h4 {
   margin-bottom: 16px;
+}
+
+.choose-heading {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.choose-intro {
+  padding: 64px 7.5% 28px;
+  background-color: #2C343E;
+  color: #FEFCF7;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.card-group-bg {
+  width: 100%;
+  height: calc(50% + 16px);
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  z-index: -10;
+}
+
+.choose-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.choose-card-wrapper > .choose-card:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.quality {
+  margin-top: 36px;
+}
+
+.choose-card {
+  width: 85.5%;
+  color: #FEFCF7;
+  height: 382px;
+  background-color: #0E8784;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.choose-card h4 {
+  margin-bottom: 24px;
+}
+.choose-card p {
+  width: 70%;
+}
+
+.choose-card-img {
+  width: 72px;
+  margin: 72px 0 56px;
+}
+
+.works {
+  margin-top: 120px;
+  text-align: center;
+}
+.works .works-heading {
+  font-size: 24px;
+  color: #83888F;
+  margin-bottom: 80px;
+}
+
+.works-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.works-wrapper > .works-stage:not(:first-of-type) {
+  margin-top: 56px;
+}
+
+.works-wrapper h1 {
+  color: #FDD6BA;
+  margin-bottom: 24px;
+}
+.works-wrapper h4 {
+  font-size: 28px;
+  margin-bottom: 24px;
 }

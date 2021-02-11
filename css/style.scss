@@ -6,6 +6,8 @@
 $cream: #FEFCF7;
 $cyan: #0E8784;
 $greyblue: #333D4B;
+$orange: #FDD6BA;
+$grey: #83888F;
 // FONTS
 $fraunces: 'Fraunces', serif;
 $barlow: 'Barlow', sans-serif;
@@ -38,12 +40,18 @@ body {
 p {
   font-family: $barlow;
   font-size: 15px;
+  line-height: 25px;
   font-weight: 400;
 }
 
-h2, h4 {
+
+h1, h2, h4 {
   font-family: $fraunces;
   font-weight: 900;
+}
+
+h1 {
+  font-size: 72px;
 }
 
 h2 {
@@ -120,7 +128,6 @@ header {
 }
 
 .hero p {
-  line-height: 25px;
   opacity: 0.8;
 }
 
@@ -168,3 +175,102 @@ header {
 .collection-option h4 {
   margin-bottom: 16px;
 }
+
+//************************************************
+// CHOOSE
+//************************************************
+
+.choose-heading {
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.choose-intro {
+  padding: 64px 7.5% 28px;
+  background-color: #2C343E;
+  color: $cream;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.card-group-bg {
+  width: 100%;
+  height: calc(50% + 16px);
+  border-radius: 0 0 10px 10px;
+  position: absolute;
+  z-index: -10;
+}
+
+.choose-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.choose-card-wrapper > .choose-card:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+
+.quality {
+  margin-top: 36px;
+}
+
+.choose-card {
+  width: 85.5%;
+  color: $cream;
+  height: 382px;
+  background-color: $cyan;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  h4 {
+    margin-bottom: 24px;
+  }
+  p {
+    width: 70%;
+  }
+}
+
+.choose-card-img {
+  width: 72px;
+  margin: 72px 0 56px;
+}
+
+//************************************************
+// WORKS
+//************************************************
+
+.works {
+  margin-top: 120px;
+  text-align: center;
+  .works-heading {
+    font-size: 24px;
+    color: $grey;
+    margin-bottom: 80px;
+  }
+}
+
+.works-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.works-wrapper > .works-stage:not(:first-of-type) {
+  margin-top: 56px;
+}
+
+.works-wrapper {
+  h1 {
+    color: $orange;
+    margin-bottom: 24px;
+  }
+  h4 {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+}
+
