@@ -33,6 +33,10 @@ body {
   margin: 0 auto;
 }
 
+li {
+  list-style: none;
+}
+
 //************************************************
 // TYPE
 //************************************************
@@ -272,5 +276,47 @@ header {
     font-size: 28px;
     margin-bottom: 24px;
   }
+
 }
 
+.works-btn {
+  margin-top: 79px;
+}
+
+//************************************************
+// FOOTER
+//************************************************
+
+footer {
+  margin: 120px 0 72px;
+  //padding-top: 54px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 346px;
+  background-color: #2C343E;
+  .img-logo {
+  }
+  li {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $barlow;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 1px;
+    color: $grey;
+    &:nth-child(-n + 2) {
+      margin-bottom: 24px;
+    }
+  }
+  .social-media {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    & img:nth-child(-n + 2) {
+      padding-right: 24px;
+    }
+  }
+}

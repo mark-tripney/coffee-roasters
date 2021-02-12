@@ -15,6 +15,10 @@ body {
   margin: 0 auto;
 }
 
+li {
+  list-style: none;
+}
+
 p {
   font-family: "Barlow", sans-serif;
   font-size: 15px;
@@ -228,4 +232,39 @@ header {
 .works-wrapper h4 {
   font-size: 28px;
   margin-bottom: 24px;
+}
+
+.works-btn {
+  margin-top: 79px;
+}
+
+footer {
+  margin: 120px 0 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 346px;
+  background-color: #2C343E;
+}
+footer li {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  color: #83888F;
+}
+footer li:nth-child(-n+2) {
+  margin-bottom: 24px;
+}
+footer .social-media {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+footer .social-media img:nth-child(-n+2) {
+  padding-right: 24px;
 }
